@@ -1,0 +1,9 @@
+# This is an example hosts file
+# It contains addresses and hostnames for the network
+# Each line must contain an IP and a hostname, with nothing else
+# Lines starting with comments or containing nothing will be ignored
+192.168.0.1 router
+192.168.0.2 computer1
+192.168.0.3 computer2
+
+
