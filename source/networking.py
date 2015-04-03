@@ -8,7 +8,7 @@ def ping(host):
   """
   Pings a host 2 times. Returns 1 if the ping is successful, 0 otherwise
   
-  The host needs to be a string containing an IP address 
+  The host needs to be a string containing an IPv4 address 
   """
 
   return not os.system('ping -c 2 '+host+'>/dev/null')

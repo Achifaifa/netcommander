@@ -5,23 +5,23 @@ import networking, process, wins
 # Load hosts
 hosts=process.loadhosts()
 
-# Initialize curses screen
-
 # Main menu
 def menu():
   """
   Main menu
   """
 
-  pass
+  while 1:
+    wins.printcycle(hosts)
+    raw_input()
 
-def initall():
-  """
-  Sets the initial conditions for the program to run
-  """
-
-  context=wins.init()
 
 if __name__=="__main__":
-  initall()
-  menu()
+ 
+  try: 
+    menu()
+    print "test"
+  # except Exception,e:
+  #   print e
+  finally:
+    wins.exitp()
