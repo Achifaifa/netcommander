@@ -11,7 +11,7 @@ def ping(host):
   The host needs to be a string containing an IPv4 address 
   """
 
-  return not os.system('ping -c 2 '+host+'>/dev/null')
+  return not os.system('ping -c 3 '+host+'>/dev/null')
 
 if __name__=="__main__":
   pass

@@ -74,6 +74,7 @@ def printhosts(hosts):
   Prints all the host on screen
   """
 
+  scr.addstr("\n\n")
   try:
     for ip, host in hosts.iteritems():
       scr.addstr("[%s]%s\t%s\n"%(ip,host,"UP" if networking.ping(ip) else "DOWN"))
