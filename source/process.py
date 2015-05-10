@@ -13,7 +13,7 @@ def loadhosts():
 
   path="/etc/hosts" if os.path.isfile("/etc/hosts") else "../data/hosts"
   with open(path,"r") as hosts:
-     hostsdict={line.partition(' ')[0].strip():line.partition(' ')[2].strip() for line in hosts if not line.startswith('#') and line.strip()}
+     hostsdict={line.partition(' ')[0].strip():line.partition(' ')[2].strip() for line in hosts if (not line.startswith('#') and not ":" in line and line.strip())}
   return hostsdict
 
 if __name__=="__main__":
